@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: #282c34;
+  color: aliceblue;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+ 
+  font-size: large;
+  width: 100%;
+}
+
+ul{
+  
+  background-color:#562292;; 
+  display: flex;
+  justify-content:center;
+  justify-content: space-around;
+  padding: 15px;
+  height:60px ;
+  margin-top: 0px ;
+ 
+}
+
+li  {
+ 
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.imgli{
+  margin-top: -10px;
+}
+a{
+  color: aliceblue;
+  
+}
+
+
+.navimg {
+  box-shadow: 0px 6px 5px rgb(118, 65, 161);
+  width: 80px;
+  height: 80px;
+  border-radius: 55px;
+  
+
+}
+
+.movie_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  
+  display: flex;
+  padding-right: 5px;
+  justify-content: flex-end;
+}
+
+
+.search{
+  background-color: transparent;
+  border: 2px solid #7549a8;
+  border-radius: 50px;
+ color: white;
+ font-family: inherit;
+ font-size: 30px;
+}
+
+.search:focus {
+  outline: 0;
+}
+.movie {
+  
+  background-color: #5e23a1;
+  border-radius: 3px;
+  box-shadow: 12px 12px 2px 1px rgba(144, 67, 216, 0.2);
+  margin: 30px;
+width: 300px;
+color: aliceblue;
+}
+
+.movie:hover {
+  background-color: rgb(85, 102, 197);
+}
+.movie img {
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+  }
+
+  .movie_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .movie_info span {
+    padding-left: 15px;
+  }
+
+  .movie_info h3 {
+    margin: 0;
+  }
+
+  .tag {
+font-weight: bold;
+border-radius: 5px ;
+padding: 1px;
+  }
+
+.tag.green {
+  color: rgb(66, 197, 66);
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
+}
+
+
+.footer {
+  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(98, 99, 104);
+}
+
+
+.topcontent { 
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.social {
+  margin: 70px;
+ 
+}
+
+
+
+
+.right{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.biography{
+  margin: 35px;
+  font-size: 20px;
+ 
+  
+}
+
+.mainperson{
+  display: flex;
+  justify-content: center;
+
+}
+
+.pers_info{
+  margin: 50px;
+}
+
+h1{
+  color: #a675df;
+}
+
+
+@media screen and (max-width: 700px) {
+ .root {
+   width: 500px;
+ }
+
+ nav {
+  width: 550px; 
+ }
+
+ .footer { 
+   width: 550px;
+  
+ }
+
+ svg {
+   width: 30px;
+   height: 30px;
+ }
+
+ .social {
+  margin: 40px;
+ 
+}
+}
