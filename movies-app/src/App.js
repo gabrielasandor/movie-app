@@ -176,13 +176,11 @@ function MovieDescription() {
       .then((res) => res.json())
       .then((data) => {
         setMovie(data);
-        console.log(data);
-
       });
   }, []);
 
   if (movie == null) {
-    return <CircularProgress />
+    return <CircularProgress/>
   }
   else {
     return <div >
@@ -226,7 +224,6 @@ function Actors() {
     fetch(personUrl)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setPerson(data.results);
       });
   }, []);
